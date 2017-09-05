@@ -33,7 +33,7 @@ public class TcpSocketClient2 {
 		InputStreamReader isr = new InputStreamReader(is);// 转换成字符输入流
 		BufferedReader br = new BufferedReader(isr);// 字符输入流缓冲
 		String info=null;
-		while((info=br.readLine())!=null){// 循环读取客户端的信息
+		while((info=br.readLine()) != null){// 循环读取客户端的信息
 			System.out.println("*******服务端信息：" + info);
 		}
 		socket.shutdownInput();// 关闭输入流

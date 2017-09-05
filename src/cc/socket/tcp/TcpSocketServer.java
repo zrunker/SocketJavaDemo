@@ -35,7 +35,7 @@ public class TcpSocketServer {
 		}
 		socket.shutdownInput();// 关闭输入流
 		
-		// 4、获取输出流，相应客户端
+		// 4、获取输出流，响应客户端
 		OutputStream os = socket.getOutputStream();
 		PrintWriter pw = new PrintWriter(os);// 将输出流包装为打印流
 		pw.write("我是服务端，你好");
